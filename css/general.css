@@ -1,0 +1,105 @@
+/* Font */
+@font-face {
+    font-family: "Josefin Sans" ;
+    src: url(./../assets/fonts/JosefinSans-Regular.ttf);
+}
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+button {
+    background-color: white;
+    border: white solid 1px;
+    padding: 13px 22px;
+    padding-top: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.green-on-white {
+    border: none;
+}
+
+.reverse {
+    background-color: rgba(0,0,0,0);
+    border: white solid 1px;
+    transition: 0.5s;
+}
+
+button a {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #414b37;
+    font-weight: 550;
+    font-size: 1.4em;
+}
+
+.reverse a {
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(0,0,0,0);
+    border: white solid 1px;
+    transition: 0.5s;
+}
+
+.green-on-white:hover {
+    background-color: rgb(157 168 147);
+    border: none;
+}
+
+.reverse:hover {
+    background-color: white;
+    border: white solid 1px;
+    transition: 0.5s;
+}
+
+button:hover a {
+    color: white;
+    transition: 0.5s;
+}
+
+.reverse:hover a {
+    color: #414b37;
+    transition: 0.5s;
+}
+
+
+
+/* Barre de défilement verticale */
+::-webkit-scrollbar {
+    width: 10px;
+    position: absolute;
+    z-index: 9999;
+}
+
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #565d50;
+    border-radius: 5px;
+}
+
+/* nav links : bloquer scroll*/
+.no-scroll {
+    overflow: hidden;
+    padding-right: var(--scrollbar-width);
+}
+
+@media (max-width: 768px) {
+    .no-scroll {
+        padding-right: 0;
+    }
+}
