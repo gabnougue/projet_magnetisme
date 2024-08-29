@@ -1,0 +1,62 @@
+<div id="contact-container">
+    <div class="contact-banner">
+        <h1>Me contacter</h1>
+        <div class="contact-banner-mail">
+            <div class="form-container">
+                <form method="post" action="mail.php">
+                    <p>Expliquez-moi votre demande :</p>
+                    <div class="double-input-container-row">
+                        <input name="subject-first-name" class="effect" type="text" placeholder="Prénom" required>
+                        <input name="subject-last-name" class="effect" type="text" placeholder="Nom" required>
+                    </div>
+                    <div class="double-input-container-row">
+                        <input name="subject-email" class="effect" type="text" placeholder="Email" required>
+                        <input name="subject-phone" class="effect" type="text" placeholder="Téléphone" required>
+                    </div>
+                    <input name="objet" class="effect" type="text" placeholder="Objet (facultatif)">
+                    <textarea class="effect" name="message" id="message" placeholder="Message" required></textarea>
+                    <input type="submit" value="Envoyer Mon Message" />
+                </form>
+            </div>
+        </div>
+        <br/>
+        <p class="hr">OU</p>
+        <br/>
+        <div class="contact-banner-tel">
+            <button>
+                <a href="tel: 0613045849">
+                    Appeler au 06.13.04.58.49
+                </a>
+            </button>
+            <button class="copy-btn" onclick="docopy()">
+                    Copier le numéro
+                <span id="textToCopy">0613045849</span>
+                    <img id="icon-copie" src="assets/img/copie.png"/>
+            </button>
+        </div>
+    </div>
+    <br/>
+    <div class="adresse-banner">
+        <h1>Me trouver</h1>
+        <p><img src="assets/img/epingler.png" class="icon-epingle"> 121 rue Legarreta, Saint-Pée-sur-Nivelle, 64310</p>
+        <div class="map-and-photos">
+            <div class="photos">
+                <div class="photo-previews">
+                    <img src="assets/img/maison/maison.jpg" alt="maison">
+                    <img src="assets/img/maison/bureau.jpg" alt="bureau">
+                    <img src="assets/img/maison/table.jpg" alt="table">
+                    <img src="assets/img/maison/bol.jpg" alt="bol">
+                    <img src="assets/img/maison/buddha.jpg" alt="buddha">
+                </div>
+                <div class="photo-container">
+                    <img src="assets/img/maison/maison.jpg" alt="photo1">
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16410.26503366261!2d-1.5569261953712668!3d43.35710580948896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd511742c84b182f%3A0xe680f1fc3f97a2b!2sMagn%C3%A9tiseur%20.Accompagnateur%20au%20changement!5e0!3m2!1sfr!2sfr!4v1724683297791!5m2!1sfr!2sfr"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,35 +1,6 @@
-.main-banner {
-    background-image: url("../assets/img/soin-mains.jpg");
-    background-position: center;
-    background-size: cover;
-    height: calc(100vh - var(--header-height));
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.qui-suis-je-banner {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #4c5444;
-    height: 100vh;
-    padding: 50px 0;
-}
-
-.les-soins-banner {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #eaeaea;
-    justify-content: center;
-    padding: 50px 0;
+.temoignages-banner .temoignages-container {
+    width: 100%;
+    height: var(--avis-height);
 }
 
 .temoignages-banner {
@@ -40,184 +11,6 @@
     align-items: center;
     background-color: #4c5444;
     padding: 50px 0;
-}
-
-/*main banner*/
-
-.main-banner::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: var(--main-banner-height);
-    width: 100%;
-    background-color: rgba(104, 116, 91, 0.5);
-    z-index: -1;
-}
-
-.main-banner h1 {
-    color: white;
-    font-size: 3.4em;
-    text-align: center;
-    line-height: 1.3em;
-}
-
-.vague {
-    width: 400px;
-    height: 60px;
-    filter: invert(1);
-    margin: 50px 0;
-}
-
-.main-banner h3 {
-    color: white;
-    font-size: 1.5em;
-    text-align: center;
-    line-height: 1.3em;
-}
-
-.main-banner button {
-    margin-top: 50px;
-}
-
-/*Qui-suis-je banner*/
-
-.skills-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 50px 0 50px 0;
-    border-radius: 3% / 7%;
-    border: 1px solid #ffffffa6;
-    background-color: #ffffff1a;
-    overflow: hidden;
-    /*box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);*/
-    width: 530px;
-    transition: 0.3s ease-in-out;
-}
-
-.skills {
-    padding: 15px;
-    width: 50%;
-}
-
-.qui-suis-je-banner img.jean-mi {
-    height: 280px;
-    width: 50%;
-    object-fit: cover;
-}
-
-.qui-suis-je-banner h2, .les-soins-banner h2 {
-    color: white;
-    font-size: 2.4em;
-    line-height: 1.3em;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.qui-suis-je-banner h3 {
-    color: white;
-    font-size: 1.4em;
-    line-height: 1.1em;
-    font-weight: normal;
-}
-
-.qui-suis-je-banner strong {
-    font-size: 1em;
-}
-
-.qui-suis-je-banner h3 br {
-    content: "";
-    display: block;
-    margin-bottom: 0.8em;
-}
-
-.qui-suis-je-banner p br{
-    content: "";
-    display: block;
-    margin-bottom: 0.5em;
-}
-
-.qui-suis-je-banner p {
-    color: white;
-    font-size: 1.3em;
-    text-align: center;
-    margin: 0 20px
-}
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-.btn-container button {
-    margin: 0 5px;
-}
-
-/*les soins banner*/
-
-.les-soins-banner h2 {
-    color: #414b37;
-    margin: 0 10px 20px 10px;
-}
-
-.les-soins-banner .soins-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-between;
-    margin-top: 40px;
-}
-
-.les-soins-banner .soins {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 20px;
-    width: 280px;
-}
-
-.les-soins-banner .soins img {
-    width: 40%;
-    height: 40%;
-    border-radius: 50%;
-    border: 2px solid #414b37;
-    padding: 10px;
-    background-color: #889b758f;
-}
-
-.les-soins-banner .soins h3 {
-    color: #414b37;
-    font-size: 1.4em;
-    line-height: 1.1em;
-    margin-top: 20px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.les-soins-banner p {
-    color: #414b37;
-    font-size: 1.2em;
-    text-align: center;
-    line-height: 1.3em;
-    margin: 0 20px
-}
-
-.les-soins-banner .soins button {
-    margin-top: 20px;
-}
-
-/*temoignages banner*/
-
-.temoignages-banner .temoignages-container {
-    width: 100%;
-    height: var(--avis-height);
 }
 
 .temoignages-banner .slider {
@@ -260,7 +53,7 @@
     float: left;
     text-align: center;
     cursor: pointer;
-    z-index: 9998;
+    z-index: 2;
 }
 
 .temoignages-banner .fleche:nth-child(3) {
@@ -323,7 +116,12 @@
     width: 100%;
     height: 40px;
     margin: 10px 0 20px 0;
+}
 
+.temoignages-banner .redirection-icon {
+    width: 15px;
+    margin-left: 5px;
+    filter: invert(1);
 }
 
 .temoignages-banner .rating p {
@@ -467,21 +265,7 @@
     margin: 12px 20px 12px 18px;
 }
 
-
 /*media queries*/
-
-@media screen and (min-width: 850px) {
-    .skills-container:hover {
-        transform: scale(1.006);
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .qui-suis-je-banner h3 {
-        font-size: 1.3em;
-    }
-}
 
 @media screen and (max-width: 1100px) {
     .fleche {
@@ -491,63 +275,6 @@
     .avis-container {
         width: 80%;
     }
-}
-
-@media screen and (max-width: 1000px) {
-    .main-banner h1 {
-        font-size: calc(5500vw / 1018);
-        padding: 0 15px;
-    }
-
-    .vague {
-        width: 300px;
-        height: 45px;
-    }
-
-    .main-banner h3 {
-        padding: 0 15px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-
-    .main-banner, .qui-suis-je-banner {
-        height: auto;
-        padding: 40px 0;
-    }
-
-    .qui-suis-je-banner .skills-container {
-        width: initial;
-        flex-direction: column;
-    }
-
-    .qui-suis-je-banner img.jean-mi {
-        width: 100%;
-    }
-
-    .skills {
-        text-align: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .skills-container {
-        margin: 30px 0 40px 0;
-        border-radius: 7% / 3%;
-    }
-
-    .qui-suis-je-banner h2 {
-        font-size: 2.1em;
-    }
-
-    .qui-suis-je-banner h3 {
-        font-size: 1.3em;
-    }
-
-    .qui-suis-je-banner p {
-        font-size: 1.2em;
-    }
-    
 }
 
 @media screen and (max-width: 767px) {
@@ -565,29 +292,6 @@
 
     .temoignages-banner .laisser-avis .mobile {
         display: flex;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    .main-banner h1 {
-        font-size: 2.6em
-    }
-
-    .vague {
-        width: 250px;
-        height: 40px;
-    }
-
-    .qui-suis-je-banner h2 {
-        font-size: 2em;
-    }
-
-    .qui-suis-je-banner h3 {
-        font-size: 1.2em;
-    }
-
-    .qui-suis-je-banner p {
-        font-size: 1.1em;
     }
 }
 
@@ -624,16 +328,9 @@
     .temoignages-banner .autres-temoignages {
         flex-direction: column;
     }
+
+    .temoignages-banner .autres-temoignages p {
+        text-decoration: underline;
+        text-decoration-color: rgba(255, 255, 255, 1);
+    }
 }
-
-/*@media screen and (max-width: 550px) {*/
-/*    .main-banner, .main-banner::before {*/
-/*        height: 100vh;*/
-/*    }*/
-/*}*/
-
-/*@media screen and (max-width: 350px) {*/
-/*    .main-banner, .main-banner::before {*/
-/*        height: 110vh;*/
-/*    }*/
-/*}*/

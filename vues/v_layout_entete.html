@@ -4,24 +4,26 @@
     <title>magnetisme</title>
     <link href="css/general.css" rel="stylesheet" type="text/css">
     <link href="css/header.css" rel="stylesheet" type="text/css">
-    <link href="css/accueil.css" rel="stylesheet" type="text/css">
+    <link href="css/accueil/accueil.css" rel="stylesheet" type="text/css">
+    <link href="css/accueil/temoignages.css" rel="stylesheet" type="text/css">
+    <link href="css/contact.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
 </head>
 <body>
 <header class="hero">
     <nav class="navbar">
-        <a href="index.php?controleur=accueil" class="logo"><ul><li><img src="../assets/img/arbre-de-vie.png" alt="logo-meditation"/></li><li><h3>Magnétiseur<br/>Jean-Michel<br/>Nougué-Lecocq</h3></li></ul></a>
+        <div class="logo"><ul><li><a href="index.php?controleur=accueil"><img src="assets/img/arbre-de-vie.png" alt="logo-meditation"/></a></li><li><a href="index.php?controleur=accueil"><h3>Magnétiseur<br/>Jean-Michel<br/>Nougué-Lecocq</h3></a></li></ul></div>
         <div class="contact-header">
             <button class="btn-tel"><a href="tel:+336 13 04 58 49">06.13.04.58.49</a></button>
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="index.php?controleur=accueil">Accueil</a></li>
-                <li><a href="index.php?controleur=qui_suis_je">Qui-suis-je ?</a></li>
-                <li><a href="#">Les soins</a></li>
-                <li><a href="#">Tarifs</a></li>
-                <li><a href="#">Témoignages</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.php?controleur=accueil" id="accueil">Accueil</a></li>
+                <li><a href="index.php?controleur=accueil#qui-suis-je-banner">Qui-suis-je ?</a></li>
+                <li><a href="index.php?controleur=accueil#les-soins-banner">Les soins</a></li>
+                <li><a href="index.php?controleur=tarifs" id="tarifs">Tarifs</a></li>
+                <li><a href="index.php?controleur=accueil#temoignages-banner">Témoignages</a></li>
+                <li><a href="index.php?controleur=contact" id="contact">Contact</a></li>
             </ul>
         </div>
         <div id="nav-icon">
@@ -31,7 +33,7 @@
         </div>
     </nav>
     <div class="adresse">
-        <h3>Sur RDV uniqument - 121 rue Legarreta, Saint-Pée-sur-Nivelle, 64310</h3>
+        <h3>Sur place OU à distance - Sur RDV uniquement - 121 rue Legarreta, Saint-Pée-sur-Nivelle, 64310</h3>
     </div>
 </header>
 <div class="margin-header"></div>

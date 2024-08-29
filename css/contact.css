@@ -1,0 +1,248 @@
+#contact-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-container::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url("../iStock_images/iStock-1372799815.jpg");
+    background-position: left;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(1px);
+}
+
+#contact-container h1 {
+    font-size: 2.6em;
+    line-height: 1.3em;
+    margin-bottom: 30px;
+}
+
+.contact-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff00;
+    justify-content: space-between;
+    width: 80%;
+    padding: 50px 0;
+}
+
+.contact-banner h1 {
+    color: white;
+}
+
+.contact-banner .contact-banner-mail {
+    width: 630px;
+}
+
+.contact-banner .contact-banner-mail .form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000078;
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+}
+
+
+:focus{outline: none;}
+
+.double-input-container-row {
+    display: flex;
+    justify-content: space-between;
+    width: 104%;
+}
+
+.contact-banner textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 150px;
+    transform: translateY(2px);
+}
+
+.contact-banner input[type="submit"] {
+    color: #fff;
+    background-color: #fffcfc00;
+    border: 1px solid #ffffff;
+    border-radius: 35px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    padding: 18px;
+    text-transform: uppercase;
+    transition: background-color 0.4s, border-color 0.4s;
+}
+
+.contact-banner input[type="submit"]:hover {
+    background-color: #ffffff30;
+    border: 1px solid #ffffff;
+}
+
+.contact-banner button {
+    border: white solid 1px;
+    transition: 0.5s;
+    margin-right: 20px;
+}
+
+.contact-banner .copy-btn {
+    color: white;
+    background-color: #ffffff00;
+    border: 1px solid #ffffff;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.contact-banner .copy-btn #textToCopy {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.contact-banner .copy-btn:hover {
+    background-color: #ffffff36;
+}
+
+.contact-banner #icon-copie {
+    filter: invert(1);
+    margin-left: 10px;
+    height: 14px;
+}
+
+.contact-banner button:hover {
+    background-color: rgb(255 255 255 / 0%);
+    border: 1px solid white;
+}
+
+.contact-banner input[type="text"], .contact-banner textarea {
+    font: 17px / 23px 'Josefin Sans', sans-serif;
+    color: #333;
+    width: 100%;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 9px 14px;
+    transition: border 0.4s;
+    margin: 10px 2%;
+}
+
+.contact-banner p {
+    width: 100%;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.contact-banner .contact-banner-tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hr {
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: #414b37;
+    margin: 20px 0;
+}
+
+.hr::before,
+.hr::after {
+    background: #eaeaea;
+    content: "";
+    flex: 1;
+    height: .025em;
+    margin: 0 .5em;
+}
+
+.adresse-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    width: 100%;
+    background-color: white;
+}
+
+.adresse-banner h1 {
+    color: #414b37;
+}
+
+.adresse-banner p {
+    color: #40413f;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.adresse-banner .icon-epingle {
+    filter: invert(0.20);
+    margin-right: 5px;
+}
+
+.adresse-banner .map-and-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 500px;
+}
+
+.map-and-photos .photos {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.map-and-photos .photos .photo-container {
+    position: relative;
+    display: flex;
+    width: 84%;
+}
+
+.map-and-photos .photos .photo-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.map-and-photos .photos .photo-previews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 14%;
+}
+
+.map-and-photos .photos .photo-previews img {
+    height: 21%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.map-and-photos .map {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
