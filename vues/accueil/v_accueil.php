@@ -40,26 +40,26 @@
                 <img src="assets/img/trouble-anxieux.png" alt="trouble-anxieux"/>
                 <h3>Troubles anxieux, dépression, addiction,...</h3>
                 <p>Crises d'angoisse, dépression, souffrance émotionnelle, stress, burn-out, intolérances alimentaires, addictions (tabac, alcool, jeux), obésité, insomnie, trouble de la fertilité ...</p>
-                <button class="green-on-white"><a href="index.php?controleur=trouble-anxieux">En savoir plus</a></button>
+                <button class="green-on-white"><a href="index.php?controleur=tarifs">En savoir plus</a></button>
             </div>
             <div class="soins">
                 <img src="assets/img/douleur-osseuse.png" alt="douleurs-diverses"/>
                 <h3>Douleurs physiques diverses</h3>
                 <p>Douleurs articulaires, arthrose, respiratoire, circulation sanguine, migraine chronique, sciatique, mal de dos, brûlure, radiothérapie/chimiothérapie ...</p>
-                <button class="green-on-white"><a href="index.php?controleur=douleurs-diverses">En savoir plus</a></button>
+                <button class="green-on-white"><a href="index.php?controleur=tarifs">En savoir plus</a></button>
             </div>
             <div class="soins">
 
                 <img src="assets/img/bruler.png" alt="probleme_peau"/>
                 <h3>Allergies ou problèmes de peau</h3>
                 <p>Allergies cutanées : zona, eczéma, verrue, dartre, varicelle ...</p>
-                <button class="green-on-white"><a href="index.php?controleur=probleme_peau">En savoir plus</a></button>
+                <button class="green-on-white"><a href="index.php?controleur=tarifs">En savoir plus</a></button>
             </div>
             <div class="soins">
                 <img src="assets/img/patte.png" alt="soin_animal"/>
                 <h3>Magnétisme animal</h3>
                 <p>Magnétothérapie sur chien, chat, etc...</p>
-                <button class="green-on-white"><a href="index.php?controleur=soin_animal">En savoir plus</a></button>
+                <button class="green-on-white"><a href="index.php?controleur=tarifs">En savoir plus</a></button>
             </div>
         </div>
     </div>

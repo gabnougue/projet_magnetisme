@@ -66,7 +66,8 @@
     max-width: 100%;
     min-width: 100%;
     min-height: 150px;
-    transform: translateY(2px);
+    overflow-y: hidden;
+    resize: none;
 }
 
 .contact-banner input[type="submit"] {
@@ -188,9 +189,10 @@
 .adresse-banner p {
     color: #40413f;
     font-size: 1.2em;
-    margin-bottom: 30px;
+    margin: 10px 10px 30px 10px;
     display: flex;
     align-items: flex-end;
+    text-align: center;
 }
 
 .adresse-banner .icon-epingle {
@@ -209,40 +211,160 @@
 .map-and-photos .photos {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    width: 50%;
+    align-items: center;
+    width: 40%;
 }
 
 .map-and-photos .photos .photo-container {
     position: relative;
     display: flex;
-    width: 84%;
+    height: 75%;
 }
 
 .map-and-photos .photos .photo-container img {
     width: 100%;
     object-fit: cover;
+    filter: blur(0);
+    transition: filter 0.3s, transform 0.3s;
+    transform: scale(1);
 }
 
-.map-and-photos .photos .photo-previews {
+.map-and-photos .photos .photo-container img.fade-out {
+    filter: blur(5px);
+    transform: scale(0.75);
+}
+
+.map-and-photos .photos .photo-previews-part {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 14%;
+    height: 20%;
+    width: 100%;
 }
 
-.map-and-photos .photos .photo-previews img {
-    height: 21%;
+.map-and-photos .photos .photo-previews-part .fleche {
+    width: 8%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-and-photos .photos .photo-previews-part .fleche img {
+    width: 45%;
+    filter: invert(0.30);
+}
+
+.map-and-photos .photos .photo-previews-part .fleche .fleche-droite {
+    transform: rotate(180deg);
+}
+
+.map-and-photos .photos .photo-previews-part .photo-previews {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 84%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.map-and-photos .photos .photo-previews-part .photo-previews .photo-previews-slider {
     width: 100%;
-    object-fit: cover;
-    margin-bottom: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+}
+
+.map-and-photos .photos .photo-previews-part .photo-previews img {
+    width: 30%;
+    margin: 0 2%;
+    cursor: zoom-in;
+    transition: transform 0.5s;
+}
+
+.map-and-photos .photos .photo-previews-part .photo-previews img:hover {
+    transform: scale(1.05);
 }
 
 .map-and-photos .map {
-    width: 45%;
+    width: 55%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .adresse-banner .map-and-photos .photos {
+        width: 55%;
+    }
+
+    .adresse-banner .map-and-photos .map {
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    .adresse-banner .map-and-photos {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .adresse-banner .map-and-photos .photos {
+        width: 100%;
+        height: 50%;
+    }
+
+    .adresse-banner .map-and-photos .photos .photo-previews-part {
+        margin-top: 10px;
+    }
+
+    .adresse-banner .map-and-photos .map {
+        width: 100%;
+        height: 350px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contact-banner .contact-banner-mail {
+        width: 90%;
+    }
+
+    .contact-banner .contact-banner-tel {
+        flex-direction: column;
+    }
+
+    .contact-banner .copy-btn {
+        margin-top: 20px;
+    }
+
+    .double-input-container-row {
+        flex-direction: column;
+    }
+
+    .contact-banner input[type="text"], .contact-banner textarea {
+        margin: 10px 0;
+    }
+
+    .double-input-container-row {
+        width: 100%;
+    }
+
+    .contact-banner .contact-banner-mail .form-container form {
+        padding: 30px 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .adresse-banner p img {
+        display: none;
+    }
 }
